@@ -2,9 +2,13 @@ package common;
 
 import java.util.Scanner;
 
+import B_branch.wind_display;
+
 public class Main {
 	public static void main(String[] args) {
 		Temp t = new Temp();
+		wind_display a = new wind_display();
+		
 		
 		Scanner input = new Scanner(System.in);
 		int num = 0;
@@ -25,15 +29,15 @@ public class Main {
 				bool = false;
 				break;
 			case 3:
+				a.display();
 				break;
 			case 4:
 				t.display();
 				break;
 			default:	
 			}
-			
+		
+
 		}
-
-	}
-
+		}
 }
